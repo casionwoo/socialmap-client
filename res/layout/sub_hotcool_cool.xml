@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical" >
+  
+    <TextView
+        android:id="@+id/CtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/ClistView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@drawable/cool_list_selector"
+    	android:cacheColorHint="#E0E0E0"
+    	android:divider="@android:color/white"
+    	android:dividerHeight="1dp"
+        />
+    
+</LinearLayout>

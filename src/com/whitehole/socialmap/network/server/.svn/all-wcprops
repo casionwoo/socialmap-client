@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/2013/!svn/ver/784/SocialMap/src/com/whitehole/socialmap/network/server
+END
+GetHotCool.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/2013/!svn/ver/718/SocialMap/src/com/whitehole/socialmap/network/server/GetHotCool.java
+END
+GetCool.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/2013/!svn/ver/784/SocialMap/src/com/whitehole/socialmap/network/server/GetCool.java
+END
+GetNotice.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/2013/!svn/ver/638/SocialMap/src/com/whitehole/socialmap/network/server/GetNotice.java
+END
+SSPicture.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/2013/!svn/ver/587/SocialMap/src/com/whitehole/socialmap/network/server/SSPicture.java
+END
+GetPhotos.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/2013/!svn/ver/739/SocialMap/src/com/whitehole/socialmap/network/server/GetPhotos.java
+END
+CCoolSPicture.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/2013/!svn/ver/685/SocialMap/src/com/whitehole/socialmap/network/server/CCoolSPicture.java
+END
+PostDeleteSever.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/2013/!svn/ver/751/SocialMap/src/com/whitehole/socialmap/network/server/PostDeleteSever.java
+END
+Notice_List.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/2013/!svn/ver/601/SocialMap/src/com/whitehole/socialmap/network/server/Notice_List.java
+END
+CoolSPicture.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/2013/!svn/ver/685/SocialMap/src/com/whitehole/socialmap/network/server/CoolSPicture.java
+END
+SendId.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/2013/!svn/ver/643/SocialMap/src/com/whitehole/socialmap/network/server/SendId.java
+END
+test.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/2013/!svn/ver/587/SocialMap/src/com/whitehole/socialmap/network/server/test.java
+END

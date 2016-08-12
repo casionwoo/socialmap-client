@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/cool_title"
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:background="#5D5D5D"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+    	android:typeface="sans"
+        android:text="  Cool Place"
+        />
+
+    <ImageView
+        android:id="@+id/coolselectedimage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="6" 
+        />
+    
+	<TextView
+        android:id="@+id/coolgallery_tv"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#EAEAEA"
+        android:textColor="#000000"
+        android:textSize="20dp"
+    	android:typeface="monospace"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dip"
+        />
+	
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:orientation="horizontal"
+    	android:gravity="right"
+    	android:layout_weight="1"    	
+    	>
+    	
+	    <Button 
+	        android:id="@+id/insertMyFolder"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+	        android:text="@string/favorites"/>
+	    
+	    <Button 
+	        android:id="@+id/goToLink"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+	        android:text="@string/comment"/>
+	    
+	    <Button 
+	        android:id="@+id/coolbutton"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+	        android:text="More Pictures"/>
+	    
+    </LinearLayout>
+    <Gallery
+        android:id="@+id/coolgallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cool_gallery_item_h" />
+
+</LinearLayout>

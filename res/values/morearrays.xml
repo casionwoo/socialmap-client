@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="morearrays">
+    	<item>NOTICE</item>
+    	<item>HELPS</item>
+    	<item>CONFIGURATION</item>
+    	<item>REMOVE DATA</item>
+    </string-array>
+</resources>

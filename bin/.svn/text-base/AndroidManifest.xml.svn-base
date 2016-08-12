@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whitehole.socialmap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:name="com.whitehole.socialmap.etc.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/socialmapappicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.whitehole.socialmap.backtagging.Tag_Service"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.example.IMGTAGGING" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.whitehole.socialmap.backtagging.SDbroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.android.camera.NEW_PICTURE" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.whitehole.socialmap.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Communicate with Server -->
+        <activity
+            android:name="com.whitehole.socialmap.network.server.test"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- End -->
+
+
+        <!-- Hot and Cool Place -->
+        <activity
+            android:name="com.whitehole.socialmap.hotcool.HotCoolPlace"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.hotcool.HotPlace"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name="com.whitehole.socialmap.hotcool.PreHotPlace"
+            android:label="Previous HOT PLACE">
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.hotcool.CoolPlace"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.hotcool.CoolClickActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- End -->
+
+        <activity
+            android:name="com.whitehole.socialmap.MapTestActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.IntroActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.OptionViewActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.SampleActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Debug key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAxCVKVRfrb9NO98HBCZhBQCESVJpiWNUg" />
+        
+        <!-- Release key -->
+<!--         <meta-data -->
+<!--             android:name="com.google.android.maps.v2.API_KEY" -->
+<!--             android:value="AIzaSyB64-36OvXGjURTY5ptvo3_Y3BPn7yP724" /> -->
+        
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/applicationId" />
+
+        <activity
+            android:name="com.whitehole.socialmap.InfowinfullActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_infowinfull" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.more.MoreMainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.whitehole.socialmap.more.sub_notice_activity"
+            android:screenOrientation="portrait"
+            android:label="공지사항" />
+        <activity
+            android:name="com.whitehole.socialmap.more.sub_help_activity"
+            android:screenOrientation="portrait"
+            android:label="도움말" />
+        <activity
+            android:name="com.whitehole.socialmap.more.sub_addaccount_activity"
+            android:screenOrientation="portrait"
+            android:label="SNS계정 추가" />
+        <activity
+            android:name="com.whitehole.socialmap.more.sub_qna_activity"
+            android:screenOrientation="portrait"
+            android:label="Q &amp; A" />
+        <activity
+            android:name="com.whitehole.socialmap.more.sub_question_activity"
+            android:screenOrientation="portrait"
+            android:label="문의하기" />
+        <activity
+            android:name="com.whitehole.socialmap.login.facebook.FacebookLoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.more.Sub_Option_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_sub__option_" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.login.google.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.ListViewPhotosActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_list_view_photos" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.ListViewPhotosDetailActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_list_view_photos_detail" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.upload.PostPicture"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_post_picture" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.InfoWinfullLocalActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_info_winfull_local" >
+        </activity>
+        <activity
+            android:name="com.whitehole.socialmap.more.DataDeleteActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_data_delete" >
+        </activity>
+    </application>
+
+    <permission
+        android:name="com.whitehole.socialmap.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.whitehole.socialmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+</manifest>
